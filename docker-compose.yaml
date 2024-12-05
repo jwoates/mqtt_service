@@ -1,0 +1,8 @@
+services:
+  client:
+    image: ruby:3.3.6-alpine3.20
+    env_file:
+      - ./.env
+    volumes:
+      - "./:/app"
+    command: tail -f /dev/null
